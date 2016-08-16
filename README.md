@@ -9,7 +9,7 @@ This is the README for the LunchAPI.
 
 ### How do I get set up? ###
 
-* Lunch API requires PHP version 5.0 to be running on the server.
+* Lunch API requires PHP version 5.2 to be running on the server.
 * To start the LunchAPI simply copy the /lunchapi folder to the root of your server, and visit your_server.com/lunchapi
 * Continuous Integration should be performed by Travis.io (not yet setup).
 * To Deploy to the public LunchAPI simply push to master.
