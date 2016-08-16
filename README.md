@@ -17,11 +17,11 @@ This README would normally document whatever steps are necessary to get your app
 ### Contribution guidelines ###
 
 * Writing tests
-- Write many a test.
+Write many a test.
 * Code review
-- Review lots of code
+Review lots of code
 * Other guidelines
-- Don't remove anyone elses work unless its Rob Farr's CSS.
+Don't remove anyone elses work unless its Rob Farr's CSS.
 
 ### Who do I talk to? ###
 
