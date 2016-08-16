@@ -1,3 +1,4 @@
 <?php
 date_default_timezone_set('Europe/London');
-echo (date('H') == 12) ? '{"isLunch": true}' : '{"isLunch" : false}';
+header("Content-Type: application/json");
+die(json_encode(["isLunch" => date('H') == 12]));
