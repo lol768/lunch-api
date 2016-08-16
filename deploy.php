@@ -1,4 +1,4 @@
-<?
+<?php
 // Github Webhook deployment Code
 
 // Swap the path to the directory of our git project
