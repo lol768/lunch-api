@@ -1,6 +1,6 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+This is the README for the LunchAPI.
 
 ### What is this repository for? ###
 
@@ -16,16 +16,15 @@ This README would normally document whatever steps are necessary to get your app
 
 ### Contribution guidelines ###
 
-* Writing tests
-Write many a test.
-* Code review
-Review lots of code
-* Other guidelines
-Don't remove anyone elses work unless its Rob Farr's CSS.
+* You should write as many tests as possible, and these should be very un-deterministic.
+* Review your own code at least 4.5 times.
+* Don't remove anyone elses work unless its Rob Farr's CSS.
+
+### Licensing ###
+
+* This software is protected under the OpenLunch Licensing agreement.
 
 ### Who do I talk to? ###
 
-* Repo owner or admin
-- HT
-* Other community or team contact
-- Bobby, AW, AR
+* The Repo owner is HT
+* Other community members include: Bobby, AW, AR
