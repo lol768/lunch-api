@@ -11,7 +11,7 @@ header("Content-Type: application/json");
 $isLunch = (date('H') == 12);
 $lunchTime = "12:00";
 
-$response = array("lunchTime" => $lunchTime, "isLunch" => $isLunch)
+$response = array("lunchTime" => $lunchTime, "isLunch" => $isLunch);
 
 die(json_encode($response));
 
