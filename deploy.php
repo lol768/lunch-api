@@ -2,7 +2,7 @@
 // Github Webhook deployment Code
 
 // Swap the path to the directory of our git project
-$path = "/var/www/html/lunchApi"; 
+$path = "/var/www/html/lunch"; 
 chdir( $path );
 
 // Now run the git stuf
