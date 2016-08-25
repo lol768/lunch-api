@@ -29,14 +29,20 @@ $secs = $datetime2 - $datetime1;
 
 // Add some randomness to the bred likelyhood
 $bred = $bred + rand(-10, 10);
-if($bred > 99) { $bred = 99; }
-if($bred < 1 ) { $bred = 1; }
+
+if($bred > 99) {
+    $bred = 99;
+}
+
+if($bred < 1 ) {
+    $bred = 1;
+}
 
 
 // Set this flag when henry comes in with a new haircut
 $henryHairCut = false;
 
-$response = array("lunchTime" => $lunchTime, "isLunch" => $isLunch, "lunchType" => $lunchType, "timeTillLunch" => $secs,  "hasHenryHadAHairCut" = $henryHairCut, "likelyhoodOfBread" => $bred);
+$response = array("lunchTime" => $lunchTime, "isLunch" => $isLunch, "lunchType" => $lunchType, "timeTillLunch" => $secs,  "hasHenryHadAHairCut" => $henryHairCut, "likelyhoodOfBread" => $bred);
 
 die(json_encode($response));
 
