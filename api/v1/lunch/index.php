@@ -11,7 +11,7 @@ header("Content-Type: application/json");
 srand(date('j'));
 
 // Setup the outputs
-$isLunch = (date('H') == 12 && date('i') == 15);
+$isLunch = (date('H') == 12 && date('i') >= 15);
 $lunchTime = "12:15";
 $lunchType = "Standard";
 $bred = 90 ;
