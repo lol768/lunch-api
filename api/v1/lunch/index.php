@@ -21,6 +21,11 @@ if(date('D') == "Tue") {
     $lunchType = "Special";
     $bred = 10;
 }
+// Add TTL (Time to Lunch)
+$datetime1 = strtotime('now');
+$datetime2 = strtotime('12:15:00 GMT');
+
+$secs = $datetime2 - $datetime1;
 
 // Add some randomness to the bred likelyhood
 $bred = $bred + rand(-10, 10);
@@ -31,7 +36,7 @@ if($bred < 1 ) { $bred = 1; }
 // Set this flag when henry comes in with a new haircut
 $henryHairCut = false;
 
-$response = array("lunchTime" => $lunchTime, "isLunch" => $isLunch, "lunchType" => $lunchType, "hasHenryHadAHairCut" = $henryHairCut, "likelyhoodOfBread" => $bred);
+$response = array("lunchTime" => $lunchTime, "isLunch" => $isLunch, "lunchType" => $lunchType, "timeTillLunch" => $secs,  "hasHenryHadAHairCut" = $henryHairCut, "likelyhoodOfBread" => $bred);
 
 die(json_encode($response));
 
