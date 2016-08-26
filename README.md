@@ -27,4 +27,4 @@ This is the README for the LunchAPI.
 ### Who do I talk to? ###
 
 * The Repo owner is HT
-* Other community members include: Bobby, AW, AR
+* Other community members include: Bobby, ALW, AR
