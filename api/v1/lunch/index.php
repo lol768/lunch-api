@@ -14,7 +14,7 @@ srand(date('j'));
 $isLunch = (date('H') == 12 && date('i') >= 15);
 $lunchTime = "12:15";
 $lunchType = "Standard";
-$bred = 90 ;
+$bread = 90 ;
 
 // Check for tuesdays lunch type
 if(date('D') == "Tue") {
@@ -27,22 +27,22 @@ $datetime2 = strtotime('12:15:00 GMT');
 
 $secs = $datetime2 - $datetime1;
 
-// Add some randomness to the bred likelyhood
-$bred = $bred + rand(-10, 10);
+// Add some randomness to the bread likelihood
+$bread = $bread + rand(-10, 10);
 
-if($bred > 99) {
-    $bred = 99;
+if($bread > 99) {
+    $bread = 99;
 }
 
-if($bred < 1 ) {
-    $bred = 1;
+if($bread < 1 ) {
+    $bread = 1;
 }
 
 
 // Set this flag when henry comes in with a new haircut
 $henryHairCut = false;
 
-$response = array("lunchTime" => $lunchTime, "isLunch" => $isLunch, "lunchType" => $lunchType, "timeTillLunch" => $secs,  "hasHenryHadAHairCut" => $henryHairCut, "likelyhoodOfBread" => $bred);
+$response = array("lunchTime" => $lunchTime, "isLunch" => $isLunch, "lunchType" => $lunchType, "timeTillLunch" => $secs,  "hasHenryHadAHairCut" => $henryHairCut, "likelihoodOfBread" => $bread);
 
 die(json_encode($response));
 
