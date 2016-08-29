@@ -23,7 +23,7 @@ if(date('D') == "Tue") {
 }
 // Add TTL (Time to Lunch)
 $datetime1 = strtotime('now');
-$datetime2 = strtotime('12:15:00 GMT');
+$datetime2 = strtotime('12:15:00 BST');
 
 $secs = $datetime2 - $datetime1;
 
